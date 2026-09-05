@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f4">
+  <title>AVA Marina — Photography, Video & Marketing</title>
+  <meta name="description" content="AVA Marina — photography, video and marketing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand brand-horizontal" href="#" aria-label="AVA Marina home">
+    <svg viewBox="0 0 250 66" class="horizontal-logo" role="img" aria-label="AVA Marina">
+      <g transform="translate(0,3)">
+        <path d="M3 49 31 9l28 40H46L31 29 16 49Z" fill="#1A1A1A"/>
+        <path d="M48 9h14l23 32 23-32h14L85 57Z" fill="#A8927A"/>
+        <path d="M111 49 139 9l28 40h-13l-15-20-15 20Z" fill="#1A1A1A"/>
+      </g>
+      <text x="178" y="38" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="500" letter-spacing="4.2" fill="#1A1A1A">MARINA</text>
+    </svg>
+  </a>
+
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#services">SERVICES</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <button class="menu" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <section class="hero">
+    <img src="assets/hero-clean.png" alt="AVA Marina photography and video production at sunset">
+    <div class="hero-overlay"></div>
+    <div class="hero-copy">
+      <h1>VISUALISING SPACES.<br>TELLING STORIES.<br>BUILDING CONNECTIONS.</h1>
+      <a class="hero-btn" href="#contact">LET'S CREATE</a>
+    </div>
+  </section>
+
+  <section class="tagline">
+    PHOTOGRAPHY. VIDEO. MARKETING.
+  </section>
+
+  <section class="below" id="services">
+    <p class="eyebrow">SERVICES</p>
+    <div class="service-grid">
+      <a href="photography.html"><span>PHOTO</span><strong>Photography</strong></a>
+      <a href="video.html"><span>VIDEO</span><strong>Films and social content</strong></a>
+      <a href="marketing.html"><span>MARKETING</span><strong>Campaigns and visual direction</strong></a>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <p class="eyebrow light">SELECTED WORK</p>
+    <div class="portfolio-grid">
+      <div class="portfolio-card card-a"><span>01</span></div>
+      <div class="portfolio-card card-b"><span>02</span></div>
+      <div class="portfolio-card card-c"><span>03</span></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <p class="eyebrow">ABOUT AVA MARINA</p>
+    <h2>Visualising spaces. Telling stories. Building connections.</h2>
+    <p class="about-copy">AVA Marina creates photography, video and marketing with a clean, premium visual language designed to make people stop, look and remember.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <p>LET'S CREATE</p>
+    <a href="mailto:hello@avamarina.com">hello@avamarina.com</a>
+  </section>
+</main>
+
+<script>
+const btn = document.querySelector('.menu');
+const nav = document.querySelector('nav');
+btn?.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', String(open));
+});
+</script>
+</body>
+</html>
